@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PlayerActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.0dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnPlayUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="播放网络音频" >
+            </Button>
+            <Button
+                android:id="@+id/btnCache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始缓存" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:orientation="horizontal" >
+
+            <SeekBar
+                android:id="@+id/skbProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:max="100"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+            </SeekBar>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
